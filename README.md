@@ -4,6 +4,8 @@ A lightweight front-end interface for the Marker Scanner system. This project is
 
 Designed to work alongside the backend service: [kennykee/marker-scanner](https://github.com/kennykee/marker-scanner)
 
+View project description here: [Ahmad Ibrahim Primary School AR Science Wall](https://schoolapp.sg/project/ahmad-ibrahim-primary-school-ar-science-wall/)
+
 ## Features
 
 - Scan markers using a camera/webcam
