@@ -1,0 +1,42 @@
+<div class='header-label dark-blue-label'>What & How to Recycle?</div>
+<div class='recycle-what'>What to Recycle?</div>
+
+<div class="table-container">
+    <img src="assets/images/content/recycle-plastic-header.png" style="width:233px; margin-top: -80px;" />
+    <table class="recycle-table" cellpadding="0" cellspacing="0" style="margin-top:-105px">
+        <thead>
+            <tr>
+                <th>S/N</th>
+                <th>Item</th>
+                <th>Can Recycle?</th>
+                <th>Remark</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script>
+    var content = [
+        {item: "Plastic bottle/container - Food or Beverage (e.g. PET, PP or PS bottles/container, carbonated and non-carbonated drinks etc.)", can: "Yes", remark: "Please empty and rinse when necessary"},
+        {item: "Plastic bottle/container - Non-food (e.g. shampoo, body wash, facial cleanser, detergent etc.)", can: "Yes", remark: "Please empty and rinse when necessary"},
+        {item: "CD and CD casing", can: "Yes", remark: ""},
+        {item: "Plastic bag (except for oxo- and bio-degradable bags)", can: "Yes", remark: ""},
+        {item: "Plastic film/flexible packaging (e.g. magazine wrapper, film packaging for packet drinks, bubble wrap etc.)", can: "Yes", remark: ""},
+        {item: "Plastic packaging (e.g. sliced bread bag and egg trays)", can: "Yes", remark: "Please empty contents"},
+        {item: "Plastic clothes hanger", can: "Yes", remark: ""},
+        {item: "Non-polystyrene foam takeaway food container", can: "Yes", remark: "Please empty and rinse when necessary"},
+        {item: "Polystyrene foam product (e.g. Styrofoam cup, clam shell container)", can: "No", remark: "Dispose as general waste"},
+        {item: "Plastic disposables<br />- cutlery and crockery", can: "No", remark: "Dispose as general waste"},
+        {item: "Plastic packaging with foil (e.g. potato chip bags, empty blister pack etc.)", can: "No", remark: "Dispose as general waste"},
+        {item: "Oxo- and bio-degradable bags", can: "No", remark: "Dispose as general waste"},
+        {item: "Drinking straw", can: "No", remark: "Dispose as general waste"},
+        {item: "Cassette and video tape", can: "No", remark: "Dispose as general waste"},
+        {item: "Plastic packaging contaminated with food", can: "No", remark: "Dispose as general waste"},
+        {item: "Melamine products (e.g. Melamine cups, melamine plates etc.)", can: "No", remark: "Dispose as general waste"},
+    ];
+
+    content.forEach((element, i) => {
+        $(".recycle-table tbody").append("<tr><td>" + (i+1) + "</td><td>" + element.item + "</td><td style='" + (element.can == "No" ? "color:red":"") + "'>" + element.can + "</td><td>" + element.remark + "</td></tr>");
+    });
+</script>

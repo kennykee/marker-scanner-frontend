@@ -1,0 +1,33 @@
+<div class='header-label dark-blue-label'>What & How to Recycle?</div>
+<div class='recycle-what'>What to Recycle?</div>
+<div class="recycle-row">
+    <div style="width: 30vw;" class="recycle-button" data-type="recycle-paper">
+        <img class="w-100" src="assets/images/content/recycle-paper.png" />
+    </div>
+    <div style="width: 25vw;" class="recycle-button" data-type="recycle-plastic">
+        <img class="w-100" src="assets/images/content/recycle-plastic.png" />
+    </div>
+</div>
+<div class="recycle-row">
+    <div style="width: 25vw;" class="recycle-button" data-type="recycle-glass">
+        <img class="w-100" src="assets/images/content/recycle-glass.png" />
+    </div>
+    <div style="width: 25vw; margin-left: 10px; margin-right: 10px;" class="recycle-button" data-type="recycle-metal">
+        <img class="w-100" src="assets/images/content/recycle-metal.png" />
+    </div>
+    <div style="width: 25vw;" class="recycle-button" data-type="recycle-others">
+        <img class="w-100" src="assets/images/content/recycle-others.png" />
+    </div>
+</div>
+<div class="recycle-row">
+    <div style="width: 28vw;" class="recycle-button" data-type="recycle-bin">
+        <img class="w-100" src="assets/images/content/recycle-bin.png" />
+    </div>
+</div>
+
+<script>
+    $(".recycle-button").click(function(event){
+        var type = $(this).data("type");
+        showRoute(type);
+    });
+</script>

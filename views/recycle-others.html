@@ -1,0 +1,39 @@
+<div class='header-label dark-blue-label'>What & How to Recycle?</div>
+<div class='recycle-what'>What to Recycle?</div>
+
+<div class="table-container">
+    <img src="assets/images/content/recycle-others-header.png" style="width:233px; margin-top: -50px;" />
+    <table class="recycle-table" cellpadding="0" cellspacing="0" style="margin-top:-77px">
+        <thead>
+            <tr>
+                <th>S/N</th>
+                <th>Item</th>
+                <th>Can Recycle?</th>
+                <th>Remark</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script>
+    var content = [
+        {item: "IT accessories<br />(e.g. cable, mouse, keyboard etc.)", can: "Maybe", remark: "Can be recycled at specific collection points"},
+        {item: "Electronic waste (e.g. Used mobile phone, tablet, laptop etc.)", can: "Maybe", remark: "Can be recycled at specific collection points"},
+        {item: "Rechargeable battery", can: "Maybe", remark: "Can be recycled at specific collection points"},
+        {item: "Household battery", can: "No", remark: "Dispose as general waste"},
+        {item: "Old items which are not in good condition (e.g. clothes, shoes, bag, soft toy, umbrella etc.)", can: "No", remark: "Dispose as general waste"},
+        {item: "Old items which are in good condition<br />(e.g. clothes, shoes, bag, soft toy, umbrella, spectacle etc.)", can: "No", remark: "Donate if it is in good condition"},
+        {item: "Food waste ", can: "No", remark: "Dispose as general waste"},
+        {item: "Leftover medicine", can: "No", remark: "Dispose as general waste"},
+        {item: "Diaper and sanitary pad", can: "No", remark: "Dispose as general waste"},
+        {item: "Stationery - Pen and pencil", can: "No", remark: ""},
+        {item: "Plant and horticultural waste ", can: "Maybe", remark: "Only for landed estates: bag and place outside your unit on collection days"},
+        {item: "Luggage bag ", can: "No", remark: "Donate if it is in good condition"},
+        {item: "Bulky waste (e.g. Furniture, standing fan etc)", can: "No", remark: "Donate if it is in good condition. Contact Town Council to remove from your residential premises"},
+    ];
+
+    content.forEach((element, i) => {
+        $(".recycle-table tbody").append("<tr><td>" + (i+1) + "</td><td>" + element.item + "</td><td style='" + (element.can == "No" ? "color:red":(element.can == "Maybe"? "color:#3EB449":"")) + "'>" + element.can + "</td><td>" + element.remark + "</td></tr>");
+    });
+</script>

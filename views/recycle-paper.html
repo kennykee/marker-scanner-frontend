@@ -1,0 +1,56 @@
+<div class='header-label dark-blue-label'>What & How to Recycle?</div>
+<div class='recycle-what'>What to Recycle?</div>
+
+<div class="table-container">
+    <img src="assets/images/content/recycle-paper-header.png" style="width:233px; margin-top: -45px;" />
+    <table class="recycle-table" cellpadding="0" cellspacing="0" style="margin-top:-76px">
+        <thead>
+            <tr>
+                <th>S/N</th>
+                <th>Item</th>
+                <th>Can Recycle?</th>
+                <th>Remark</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script>
+    var content = [
+        {item: "Printed paper (Glossy and non-glossy)", can: "Yes", remark: ""},
+        {item: "Writing paper", can: "Yes", remark: ""},
+        {item: "Newspaper", can: "Yes", remark: ""},
+        {item: "Flyer (Glossy and non-glossy)", can: "Yes", remark: ""},
+        {item: "Brochure (Glossy and non-glossy)", can: "Yes", remark: ""},
+        {item: "Magazine (Glossy and non-glossy)", can: "Yes", remark: ""},
+        {item: "Book", can: "Yes", remark: "Donate if it is in good condition"},
+        {item: "Telephone directory", can: "Yes", remark: ""},
+        {item: "Envelope (With & without plastic window)", can: "Yes", remark: ""},
+        {item: "Red packet", can: "Yes", remark: ""},
+        {item: "Name card", can: "Yes", remark: ""},
+        {item: "Calendar", can: "Yes", remark: ""},
+        {item: "Greeting card", can: "Yes", remark: ""},
+        {item: "Gift wrapping paper", can: "Yes", remark: ""},
+        {item: "Shredded paper", can: "Yes", remark: ""},
+        {item: "Paper receipt", can: "Yes", remark: ""},
+        {item: "Carton box", can: "Yes", remark: "Please flatten"},
+        {item: "Paper packaging<br />(e.g. printed paper box etc.)", can: "Yes", remark: "Please flatten"},
+        {item: "Egg tray", can: "Yes", remark: ""},
+        {item: "Beverage carton<br />(e.g. milk, juice and drink packet)", can: "Yes", remark: "Please empty and rinse when necessary. Please flatten"},
+        {item: "Paper towel and toilet roll tube", can: "Yes", remark: ""},
+        {item: "Tissue box", can: "Yes", remark: ""},
+        {item: "Paper bag", can: "Yes", remark: ""},
+        {item: "Used paper disposables<br />(e.g. paper cup, plate etc.)", can: "No", remark: "Dispose as general waste"},
+        {item: "Tissue paper", can: "No", remark: "Dispose as general waste"},
+        {item: "Paper towel", can: "No", remark: ""},
+        {item: "Toilet paper", can: "No", remark: ""},
+        {item: "Disposable wooden chopstick", can: "No", remark: "Dispose as general waste"},
+        {item: "Wax paper", can: "No", remark: ""},
+        {item: "Paper packaging that are contaminated with food<br />(e.g. pizza box, paper bag for pastries)", can: "No", remark: "Dispose as general waste"},
+    ];
+
+    content.forEach((element, i) => {
+        $(".recycle-table tbody").append("<tr><td>" + (i+1) + "</td><td>" + element.item + "</td><td style='" + (element.can == "No" ? "color:red":"") + "'>" + element.can + "</td><td>" + element.remark + "</td></tr>");
+    });
+</script>

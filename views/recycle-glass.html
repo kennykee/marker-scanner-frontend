@@ -1,0 +1,36 @@
+<div class='header-label dark-blue-label'>What & How to Recycle?</div>
+<div class='recycle-what'>What to Recycle?</div>
+
+<div class="table-container">
+    <img src="assets/images/content/recycle-glass-header.png" style="width:233px; margin-top: -79px;" />
+    <table class="recycle-table" cellpadding="0" cellspacing="0" style="margin-top:-128px">
+        <thead>
+            <tr>
+                <th>S/N</th>
+                <th>Item</th>
+                <th>Can Recycle?</th>
+                <th>Remark</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script>
+    var content = [
+        {item: "Glass bottle - Beverage<br/>(e.g. carbonated drink, beer, wine)", can: "Yes", remark: "Please empty and rinse when necessary"},
+        {item: "Glass bottle - Food<br />(e.g. sauce and condiment bottle, jam spread etc.)", can: "Yes", remark: "Please empty and rinse when necessary"},
+        {item: "Glass bottle - Cosmetic ", can: "Yes", remark: "Please empty and rinse when necessary"},
+        {item: "Glass bottle - Medicine and supplement", can: "Yes", remark: "Please empty and rinse when necessary"},
+        {item: "Glassware - Cup, plate", can: "Yes", remark: ""},
+        {item: "Borosilicate or Pyrex glassware<br />(e.g. bakeware)", can: "No", remark: "Dispose as general waste"},
+        {item: "Windows", can: "No", remark: "Dispose as general waste"},
+        {item: "Mirror", can: "No", remark: "Donate if it is in good condition"},
+        {item: "Ceramic product<br />(e.g. ceramic plate, tea pot etc.)", can: "No", remark: "Donate if it is in good condition"},
+        {item: "Light bulb", can: "Maybe", remark: "Can be recycled at specific collection points"},
+    ];
+
+    content.forEach((element, i) => {
+        $(".recycle-table tbody").append("<tr><td>" + (i+1) + "</td><td>" + element.item + "</td><td style='" + (element.can == "No" ? "color:red":(element.can == "Maybe"? "color:#3EB449":"")) + "'>" + element.can + "</td><td>" + element.remark + "</td></tr>");
+    });
+</script>

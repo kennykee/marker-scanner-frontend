@@ -1,0 +1,84 @@
+@font-face {  
+    font-family: 'Avenir'; 
+    src: url("../fonts/Avenir-Roman.ttf") format('truetype');
+}
+@font-face {  
+    font-family: 'Avenir'; 
+    font-weight: 900;
+    src: url("../fonts/Avenir-Black.ttf") format('truetype');
+}
+@font-face {  
+    font-family: 'Avenir'; 
+    font-weight: 900;
+    font-style: italic;
+    src: url("../fonts/Avenir-BlackOblique.ttf") format('truetype');
+}
+@font-face {  
+    font-family: 'Avenir'; 
+    font-weight: 350;
+    src: url("../fonts/Avenir-Book.ttf") format('truetype');
+}
+@font-face {  
+    font-family: 'Avenir'; 
+    font-weight: 350;
+    font-style: italic;
+    src: url("../fonts/Avenir-BookOblique.ttf") format('truetype');
+}
+@font-face {  
+    font-family: 'Avenir'; 
+    font-weight: 800;
+    src: url("../fonts/Avenir-Heavy.ttf") format('truetype');
+}
+@font-face {  
+    font-family: 'Avenir'; 
+    font-weight: 800;
+    font-style: italic;
+    src: url("../fonts/Avenir-HeavyOblique.ttf") format('truetype');
+}
+@font-face {  
+    font-family: 'Avenir'; 
+    font-weight: 300;
+    src: url("../fonts/Avenir-Light.ttf") format('truetype');
+}
+@font-face {  
+    font-family: 'Avenir'; 
+    font-weight: 300;
+    font-style: italic;
+    src: url("../fonts/Avenir-LightOblique.ttf") format('truetype');
+}
+@font-face {  
+    font-family: 'Avenir'; 
+    font-weight: 500;
+    src: url("../fonts/Avenir-Medium.ttf") format('truetype');
+}
+@font-face {  
+    font-family: 'Avenir'; 
+    font-weight: 500;
+    font-style: italic;
+    src: url("../fonts/Avenir-MediumOblique.ttf") format('truetype');
+}
+@font-face {  
+    font-family: 'Avenir'; 
+    font-style: italic;
+    src: url("../fonts/Avenir-Oblique.ttf") format('truetype');
+}
+@font-face {  
+    font-family: 'Berlin Sans FB Demi'; 
+    font-weight: 600;
+    src: url("../fonts/BRLNSDB.ttf") format('truetype');
+}
+@font-face {  
+    font-family: 'Century Gothic'; 
+    src: url("../fonts/GOTHIC.ttf") format('truetype');
+}
+@font-face {  
+    font-family: 'Century Gothic'; 
+    font-weight: bold;
+    src: url("../fonts/GOTHICB.ttf") format('truetype');
+}
+@font-face {  
+    font-family: 'Century Gothic'; 
+    font-weight: bold;
+    font-style: italic;
+    src: url("../fonts/GOTHICBI.ttf") format('truetype');
+}

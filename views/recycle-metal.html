@@ -1,0 +1,32 @@
+<div class='header-label dark-blue-label'>What & How to Recycle?</div>
+<div class='recycle-what'>What to Recycle?</div>
+
+<div class="table-container">
+    <img src="assets/images/content/recycle-metal-header.png" style="width:233px; margin-top: -74px;" />
+    <table class="recycle-table" cellpadding="0" cellspacing="0" style="margin-top:-91px">
+        <thead>
+            <tr>
+                <th>S/N</th>
+                <th>Item</th>
+                <th>Can Recycle?</th>
+                <th>Remark</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script>
+    var content = [
+        {item: "Metal can - Beverage<br />(e.g. carbonated drink, beer etc.)", can: "Yes", remark: "Please empty and rinse when necessary"},
+        {item: "Metal can - Food (e.g. biscuit and food tin, canned food etc.)", can: "Yes", remark: "Please empty and rinse when necessary"},
+        {item: "Metal bottle cap", can: "Yes", remark: ""},
+        {item: "Aerosol can", can: "Yes", remark: "Please empty content"},
+        {item: "Clean aluminium tray and foil ", can: "Yes", remark: "Please empty and rinse when necessary"},
+        {item: "Metal container - Non-food (e.g. paint container etc.)", can: "Yes", remark: "Please empty content"},
+    ];
+
+    content.forEach((element, i) => {
+        $(".recycle-table tbody").append("<tr><td>" + (i+1) + "</td><td>" + element.item + "</td><td style='" + (element.can == "No" ? "color:red":(element.can == "Maybe"? "color:#3EB449":"")) + "'>" + element.can + "</td><td>" + element.remark + "</td></tr>");
+    });
+</script>
