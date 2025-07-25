@@ -2,7 +2,7 @@
 
 A lightweight front-end interface for the Marker Scanner system. This project is built using **pure HTML, CSS, and JavaScript**, with external libraries.
 
-Designed to work alongside the backend service: [kennykee/marker-scanner](https://github.com/kennykee/marker-scanner)
+Designed to work alongside the backend service: [kennykee/marker-scanner](https://github.com/kennykee/marker-scanner). Built using Python, Flask, and OpenCV for backend image processing and web-based interaction.
 
 View project description here: [Ahmad Ibrahim Primary School AR Science Wall](https://schoolapp.sg/project/ahmad-ibrahim-primary-school-ar-science-wall/)
 
