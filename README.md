@@ -17,16 +17,16 @@ View project description here: [Ahmad Ibrahim Primary School AR Science Wall](ht
 
 ## Repository
 
-This repository: git@github.com:kennykee/marker-scanner-frontend.git
+This repository: [git@github.com:kennykee/marker-scanner-frontend.git](https://github.com/kennykee/marker-scanner-frontend/)
 
 Backend repository: https://github.com/kennykee/marker-scanner
 
 ## How to Use
 
-1. **Install a local web server** like [WAMP](https://www.wampserver.com/), [XAMPP](https://www.apachefriends.org/), or any other PHP-capable server.
+1. Install a local web server like [WAMP](https://www.wampserver.com/), [XAMPP](https://www.apachefriends.org/), or any other PHP-capable server.
 2. Place this project folder inside the web root directory (e.g. `www/` for WAMP or `htdocs/` for XAMPP).
 3. Start the web server.
-4. On your **phone browser**, visit the local IP address of your computer:
+4. On your phone browser, visit the local IP address of your computer or hosting server.
 
 ## License
 
